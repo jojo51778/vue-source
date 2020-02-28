@@ -16,6 +16,6 @@ export default {
   },
   render(h) {
     let tag = this.tag
-    return <tag onClick={this.handler}>{this.$slot.default}</tag>
+    return <tag onClick={this.handler}>{this.$slots.default}</tag>
   }
 }

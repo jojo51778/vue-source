@@ -1,6 +1,6 @@
 export default function createRouteMap(routes, oldPathList, oldPathMap) {
   let pathList = oldPathList || []
-  let pathMap = oldPathMap || []
+  let pathMap = oldPathMap || Object.create(null)
   //数组扁平化
   routes.forEach(route => {
     //根据路径格式化数据
